@@ -1,0 +1,17 @@
+config BR2_PACKAGE_LIBIEC61850
+	bool "libiec61850"
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	#depends on BR2_STATIC_LIBS
+	depends on BR2_USE_MMU # fork()
+	help
+	  TFM de mierda
+
+	  http://tfm-mierda.com/
+
+if BR2_PACKAGE_LIBIEC61850
+config BR2_PACKAGE_LIBIEC61850_EXAMPLES
+	bool "enable examples"
+	help
+	  Enable build of the examples.
+
+endif
