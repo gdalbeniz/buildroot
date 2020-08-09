@@ -1,0 +1,9 @@
+config BR2_PACKAGE_LIBIBPF
+	bool "libbpf"
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	#depends on BR2_STATIC_LIBS
+	#depends on BR2_USE_MMU # fork()
+	help
+	  TFM de mierda
+
+	  http://tfm-mierda.com/
